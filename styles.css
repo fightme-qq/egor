@@ -23,6 +23,7 @@ body {
   color: var(--ink);
   background: var(--paper);
   font-family: "Manrope", "Segoe UI", sans-serif;
+  overflow-x: hidden;
 }
 
 img {
@@ -639,12 +640,13 @@ h2 {
   }
 
   .hero {
-    min-height: 720px;
-    padding: 42px 16px;
+    min-height: auto;
+    padding: 46px 16px 40px;
   }
 
   .hero-media {
     grid-template-columns: 1fr;
+    opacity: 0.44;
   }
 
   .hero-media img:not(:first-child) {
@@ -652,7 +654,22 @@ h2 {
   }
 
   .hero-copy {
-    font-size: 17px;
+    max-width: 22rem;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .hero h1 {
+    max-width: 9ch;
+    font-size: clamp(52px, 16vw, 66px);
+    line-height: 0.88;
+  }
+
+  .hero-agent {
+    width: 100%;
+    max-width: 280px;
+    margin-top: 24px;
+    padding: 9px 12px 9px 9px;
   }
 
   .hero-portrait {
@@ -688,10 +705,59 @@ h2 {
 
   .property {
     padding: 18px;
+    gap: 18px;
   }
 
   .property-visual {
-    min-height: 280px;
+    min-height: 0;
+    aspect-ratio: 1 / 0.78;
+  }
+
+  .property h2 {
+    font-size: 33px;
+    line-height: 1.02;
+  }
+
+  .property p {
+    font-size: 15px;
+    line-height: 1.58;
+  }
+
+  .stats {
+    margin: 18px 0;
+  }
+
+  .stats div {
+    min-height: 82px;
+    padding: 13px 14px;
+  }
+
+  .facts {
+    gap: 7px;
+  }
+
+  .facts span {
+    padding: 7px 9px;
+    font-size: 12px;
+  }
+
+  .location img {
+    min-height: 0;
+    aspect-ratio: 1.15 / 1;
+  }
+
+  .contact-band {
+    gap: 24px;
+  }
+
+  .contact-portrait {
+    width: 86px;
+    height: 86px;
+  }
+
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .button,
