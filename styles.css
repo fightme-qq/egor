@@ -237,6 +237,7 @@ h2 {
   max-width: 980px;
   font-size: clamp(56px, 10vw, 140px);
   line-height: 0.92;
+  overflow-wrap: normal;
 }
 
 .hero-copy {
@@ -660,9 +661,9 @@ h2 {
   }
 
   .hero h1 {
-    max-width: 9ch;
-    font-size: clamp(52px, 16vw, 66px);
-    line-height: 0.88;
+    max-width: 100%;
+    font-size: clamp(46px, 15vw, 58px);
+    line-height: 0.9;
   }
 
   .hero-agent {
